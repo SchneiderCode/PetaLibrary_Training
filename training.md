@@ -58,13 +58,17 @@ version: 0.0.1
 
 -->
 
-# Research Computing <TODO: Topic Area> Training
+# Research Computing PetaLibrary Training
 
-Welcome to the Research Computing <TODO: Topic Area> Training! This course covers the ins and outs of <TODO: Topic Area>
+Unlock the potential of your data with this introductory training on Research Computing's PetaLibrary service, designed to help you efficiently store, share, and archive research data. You will learn:
+
+ * about the different storage tiers
+ * how to manage data access and file permissions
+ * and how to integrate PetaLibrary into your active research workflows! 
 
 <div style="width:45%; margin: 15px 2.5%; float:left;">
 
-![A student is taking an online quiz to test their knowledge of HPC systems. There is a banner across the top stating 'CU Research Computing: Verify your skills'](img/RC_Quiz.png)<!-- style="border:solid black 1px; border-radius: 15px;" -->
+![Two researchers collaborate in a detailed cartoon data center featuring a central "PETALIBRARY" server. The high-capacity storage hub is smiling, with its side panel clearly showing "PETABYTES 100+ PB" amid other scientific data icons.](img/PetaLibrary_Banner.png)<!-- style="border:solid black 1px; border-radius: 15px;" -->
 
 </div>
 
@@ -138,7 +142,7 @@ Institutional email address:
 <script input="submit" default="Submit" style="display:block; text-align:center;"  >
   if(user_email.endsWith(".edu") || user_email.endsWith(".gov")){
     let currentDate = new Date();
-    sendData({username: user_name, email: user_email, course:"<TRAINING>_SCORES", question:"START", value: currentDate.toLocaleString()})
+    sendData({username: user_name, email: user_email, course:"PETALIBRARY_SCORES", question:"START", value: currentDate.toLocaleString()})
     "Information Saved"
   }
   else{
@@ -159,14 +163,14 @@ Institutional email address:
 
 ---
 
-## Section 1 Title
+## Overview
 <!---
 The following hidden script will run when the section is loaded and send a notice to the
   associated Google Sheet. This helps to track visits to each section of a training.
 --->
 <script hidden>
  let currentDate = new Date();
-  sendData({username: user_name, email: user_email, course:"<TODO_COURSE_NAME>_VISITS", question:"<SECTION TITLE>", value: currentDate.toLocaleString()})
+  sendData({username: user_name, email: user_email, course:"PETALIBRARY_VISITS", question:"OVERVIEW", value: currentDate.toLocaleString()})
   "LIA: wait"
 </script>
 
