@@ -204,7 +204,7 @@ TODO - Convert into an infographic / diagram.
 
 ## PL Allocation Tiers
 
-<iframe id="pl_tiers" title="PetaLibrary Allocation Tiers" src="https://curc.readthedocs.io/en/latest/petalibrary/allocation_types.html" \>
+??[PetaLibrary Allocation Tiers](https://curc.readthedocs.io/en/latest/petalibrary/allocation_types.html)
 
 ---
 
