@@ -163,33 +163,57 @@ Institutional email address:
 
 ---
 
-## Overview
-<!---
-The following hidden script will run when the section is loaded and send a notice to the
-  associated Google Sheet. This helps to track visits to each section of a training.
---->
+## Overview of PetaLibrary
+
 <script hidden>
  let currentDate = new Date();
   sendData({username: user_name, email: user_email, course:"PETALIBRARY_VISITS", question:"OVERVIEW", value: currentDate.toLocaleString()})
   "LIA: wait"
 </script>
 
-Add Content Here detailing the improtant information a user needs to know and understand. You can learn more abou the different ways to format content in (LiaScript's online documentation](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#1).
+The PetaLibrary is a University of Colorado Boulder Research Computing service that supports the storage, archival, and sharing of research data. It is available to any researcher affiliated with the University of Colorado System (Boulder, Anschutz, Denver, Colorado Springs) at an internal cost rate. It is available at an external cost rate to researchers from other RMACC institutions. 
 
-<!--- 
- Example Content - CURC Documentation Callout/Admonition
---->
+**Key Points for PetaLibrary Storage:**  
+ * Data storage is purchased in TeraByte (TB) units at an annual rate. For reference, 1 TeraByte (TB) = 1,000 GigaBytes (GB).
+ * All data stored in PetaLibrary must adhere to the [PetaLibrary Terms of Service](https://www.colorado.edu/rc/resources/petalibrary/tos). 
+ * A PetaLibrary allocation on its own is a single copy of your data that is not backed up. Details and options for backing up your research data are described in the [PetaLibrary Allocation Tier documentation](https://curc.readthedocs.io/en/latest/petalibrary/allocation_types.html).
+
+
 <div style="display: flex; align-items:center; padding:1em; border-top: dashed 1px; border-bottom: dashed 1px; " >
 
   <img alt="Read the Docs Logo" src="img/RTD_Logo_Dark.svg" style="width:150px; margin-right:15px; background-color:white; border-radius:5px; padding:5px;"> 
 
-  <p style="margin-bottom:0;" > This is an example callout which can be used for linking to related information in CURC's online documentation. Make sure to add a link to the docs with a descriptive title! </p>
+  <p style="margin-bottom:0;" > This tutorial provides a quick overview of CURC's PetaLibrary service. For a more detailed information, make sure to review [CURC's PetaLibrary Documentation](https://curc.readthedocs.io/en/latest/petalibrary/index.html) </p>
 
 </div>
 
+---
+
+## Creating a PL Allocation
+
+Step 1: Choose the allocation tier that is right for you.
+
+Step 2: Request a new PetaLibrary allocation (links to Docusign form)
+
+Step 3: Learn to use PetaLibrary via this documentation.
+
+TODO - Convert into an infographic / diagram. 
+
+---
+
+## PL Allocation Tiers
+
+<iframe id="pl_tiers" title="PetaLibrary Allocation Tiers" src="https://curc.readthedocs.io/en/latest/petalibrary/allocation_types.html">
+
+---
+
+## PetaLibrary Roles
+
+In short, any researcher 
+
 --- 
 
-#### ✏ Knowledge Check
+## ✏ Knowledge Check
 
 <!--- 
  Knowledge Check's serve as formative assessments that test a user's understanding of the covered material. 
@@ -264,12 +288,69 @@ if(check == 2){
 
 <div style="clear:both"></div>
 
---- 
 
-### Section 2
+---
+
+## Conclusion
 
 <script hidden>
  let currentDate = new Date();
-  sendData({username: user_name, email: user_email, course:"NEW_USER_VISITS", question:"CLUSTER_HARDWARE", value: currentDate.toLocaleString()})
+  sendData({username: user_name, email: user_email, course:"PETALIBRARY_VISITS", question:"CONCLUSION", value: currentDate.toLocaleString()})
   "LIA: wait"
 </script>
+
+
+**Congratulations! You have completed CURC's PetaLibrary Training!**
+
+If you have specific questions about CURC resources, please fill out our [support request form](https://colorado.service-now.com/req_portal?id=ucb_sc_rc_form).
+
+To learn more about Research Computing, con`sider:
+
+* Reading the [Online Documentation](https://curc.readthedocs.io/en/latest/getting_started/navigating_docs.html).
+* Attending a [Workshop Training Session or Consult Hours](https://curc.readthedocs.io/en/latest/getting_started/trainings_and_consults/index.html).
+
+--- 
+
+
+<div style="width:40%; border: solid black 1px; padding:10px; border-radius: 15px; margin: 0 auto;" >
+
+Please let us know how useful you found this online training: 
+
+  [(2)] Very useful
+  [(1)] Somewhat useful
+  [(0)] Neutral 
+  [(-1)] Not so useful
+  [(-2)] Not very useful
+<script>
+  let choices = @input;
+  for (const [key, value] of Object.entries(choices)) {
+    if(value === 1){
+      sendData({username: user_name, email: user_email, course:"PETALIBRARY_SCORES", question:"REVIEW_SCORE", value: key })
+      send.lia("Feedback Sent", [], false)
+      break;
+    }
+  }
+
+</script>
+
+</div>
+
+<br>
+
+<div style="width:40%; border: solid black 1px; padding:10px; border-radius: 15px; margin: 0 auto;" >
+
+Please provide any comments you would like to share with us on this course: 
+
+[[___ ___ ___ ___]]
+<script>
+  let feedback= `@input`
+  feedback = feedback.replace(/(\r\n|\n|\r)/g, "_"); //Google Script wont accept breaks, must replace with "_" to ensure the data is received/saved.
+  sendData({username: user_name, email: user_email, course:"PETALIBRARY_SCORES", question:"COMMENTS", value: feedback})
+  send.lia("Feedback Sent", [], false)
+  "LIA: wait"
+</script>
+
+
+</div>
+
+<div style="clear:both"></div>
