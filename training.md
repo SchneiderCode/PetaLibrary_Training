@@ -174,6 +174,7 @@ Institutional email address:
 The PetaLibrary is a University of Colorado Boulder Research Computing service that supports the storage, archival, and sharing of research data. It is available to any researcher affiliated with the University of Colorado System (Boulder, Anschutz, Denver, Colorado Springs) at an internal cost rate. It is available at an external cost rate to researchers from other RMACC institutions. 
 
 **Key Points for PetaLibrary Storage:**  
+
  * Data storage is purchased in TeraByte (TB) units at an annual rate. For reference, 1 TeraByte (TB) = 1,000 GigaBytes (GB).
  * All data stored in PetaLibrary must adhere to the [PetaLibrary Terms of Service](https://www.colorado.edu/rc/resources/petalibrary/tos). 
  * A PetaLibrary allocation on its own is a single copy of your data that is not backed up. Details and options for backing up your research data are described in the [PetaLibrary Allocation Tier documentation](https://curc.readthedocs.io/en/latest/petalibrary/allocation_types.html).
@@ -203,7 +204,7 @@ TODO - Convert into an infographic / diagram.
 
 ## PL Allocation Tiers
 
-<iframe id="pl_tiers" title="PetaLibrary Allocation Tiers" src="https://curc.readthedocs.io/en/latest/petalibrary/allocation_types.html">
+<iframe id="pl_tiers" title="PetaLibrary Allocation Tiers" src="https://curc.readthedocs.io/en/latest/petalibrary/allocation_types.html" \>
 
 ---
 
