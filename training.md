@@ -181,7 +181,7 @@ The PetaLibrary is a University of Colorado Boulder Research Computing service t
 
   <img alt="Read the Docs Logo" src="img/RTD_Logo_Dark.svg" style="width:150px; margin-right:15px; background-color:white; border-radius:5px; padding:5px;"> 
 
-  <p style="margin-bottom:0;" > This tutorial provides a quick overview of CURC's PetaLibrary service. For a more detailed information, make sure to review [CURC's PetaLibrary Documentation](https://curc.readthedocs.io/en/latest/petalibrary/index.html) </p>
+  <p style="margin-bottom:0;" > This tutorial provides a quick overview of CURC's PetaLibrary service. For more detailed information, please see [PetaLibrary's online documentation](https://curc.readthedocs.io/en/latest/petalibrary/index.html) </p>
 
 </div>
 
@@ -230,13 +230,13 @@ Although the Archive allocation tier is robust, all current allocations within t
 
 ---
 
-### Data Recovery
+## Data Recovery
 
 A PetaLibrary active or archive allocation is a single copy of your data that is not backed up. PetaLibrary can be a component of a good backup strategy, but for data that cannot be replaced, an active or archive PetaLibrary should not be the only copy. While the PetaLibrary active+archive and archive+DR (DR=disaster recovery) tiers provide additional redundancy for your data, please remember it is the sole responsiblity of the allocation onwer to ensure critical data are backed up ([PetaLibrary Terms of Service](https://www.colorado.edu/rc/resources/petalibrary/tos)). 
 
 
 > [!TIP]
-> If you have any questions or concerns about data recovery related to PetaLibrary, please reach out to CURC's User Support team. They would be happy to discuss your specific data storage needs over email or in a virtual consultation. You can reach the User Support Team through the [online support request form](https://colorado.service-now.com/req_portal?id=ucb_sc_rc_form).
+> If you have any questions or concerns about data recovery related to PetaLibrary, please reach out to CURC's User Support team through the [online support request form](https://colorado.service-now.com/req_portal?id=ucb_sc_rc_form).
 
 ---
 
