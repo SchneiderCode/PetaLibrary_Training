@@ -163,7 +163,7 @@ Institutional email address:
 
 ---
 
-## Overview of PetaLibrary
+## Overview
 
 <script hidden>
  let currentDate = new Date();
@@ -177,7 +177,7 @@ The PetaLibrary is a University of Colorado Boulder Research Computing service t
 
  * Data storage is purchased in TeraByte (TB) units at an annual rate. For reference, 1 TeraByte (TB) = 1,000 GigaBytes (GB).
  * All data stored in PetaLibrary must adhere to the [PetaLibrary Terms of Service](https://www.colorado.edu/rc/resources/petalibrary/tos). 
- * A PetaLibrary allocation on its own is a single copy of your data that is not backed up. Details and options for backing up your research data are described in the [PetaLibrary Allocation Tier documentation](https://curc.readthedocs.io/en/latest/petalibrary/allocation_types.html).
+ * A PetaLibrary allocation on its own is a single copy of your data that is not backed up. Details and options for backing up your research data are described in the [PetaLibrary Allocation Tier Documentation](https://curc.readthedocs.io/en/latest/petalibrary/allocation_types.html).
 
 
 <div style="display: flex; align-items:center; padding:1em; border-top: dashed 1px; border-bottom: dashed 1px; " >
@@ -190,7 +190,7 @@ The PetaLibrary is a University of Colorado Boulder Research Computing service t
 
 ---
 
-## Creating a PL Allocation
+## Creating an Allocation
 
 Step 1: Choose the allocation tier that is right for you.
 
@@ -202,25 +202,71 @@ TODO - Convert into an infographic / diagram.
 
 ---
 
-## PL Allocation Tiers
+## PetaLibrary Tiers
 
-??[PetaLibrary Allocation Tiers](https://curc.readthedocs.io/en/latest/petalibrary/allocation_types.html)
+**Active Tier** 
+
+PetaLibrary active allocations are the most performant PetaLibrary tier (please note that performant is a relative term – our parallel scratch filesystem will outperform any PetaLibrary tier). The underlying hardware is configured to be suitable for direct compute access, and as such is accessible from all compute environments (Alpine, Blanca, Open OnDemand). 
+
+
+**Archive Tier**
+
+PetaLibrary archive allocations are configured to maximize data integrity over performance. As such, archive allocations are not accessible from compute nodes, but can be accessed interactively on login nodes.
+
+**Active + Archive Tier**
+
+The PetaLibrary active+archive is a means of automatically replicating your data across our active and archive PetaLibrary tiers. Rather than purchase an active and archive allocation and synchronizing data between the two, you can purchase the active+archive tier, and we will manage the replication for you. With this type of allocation, you have full access to the active tier only, and we manage replicating data to the archive tier for you.
+
+**Archive + DR**
+
+Although the Archive allocation tier is robust, all current allocations within this tier are hosted in a single location. In the event of a disaster at this location, we cannot guarantee the safety of this data. To add an extra layer of protection, we offer the Archive + DR (Disaster Recovery) tier. The Archive + DR tier offers the same benefits as the Archive tier in addition to a monthly backup of the data to an offsite location. The backup process and any needed restoration efforts will be managed entirely by CURC staff.
+
+**IDEA - Add a graphic hear highlighting the differences between Active, Archive, Active + Archive**
+
+<div style="display: flex; align-items:center; padding:1em; border-top: dashed 1px; border-bottom: dashed 1px; " >
+
+  <img alt="Read the Docs Logo" src="img/RTD_Logo_Dark.svg" style="width:150px; margin-right:15px; background-color:white; border-radius:5px; padding:5px;"> 
+
+  <p style="margin-bottom:0;" > You can find an in-depth comparision of the different tiers in the [PetaLibrary Allocation Tiers Documentation](https://curc.readthedocs.io/en/latest/petalibrary/index.html) </p>
+
+</div>
+
+
+---
+
+## Data Recovery
+
+A PetaLibrary active or archive allocation is a single copy of your data that is not backed up. PetaLibrary can be a component of a good backup strategy, but for data that cannot be replaced, an active or archive PetaLibrary should not be the only copy. While the PetaLibrary active+archive and archive+DR (DR=disaster recovery) tiers provide additional redundancy for your data, please remember (as stated in the [PetaLibrary Terms of Service](https://www.colorado.edu/rc/resources/petalibrary/tos)) it is the sole responsiblity of the allocation onwer to ensure critical data are backed up. 
+
+
+> [!TIP]
+> If you have any questions or concerns about data recovery related to PetaLibrary, please reach out to CURC's User Support team. They would be happy to discuss your specific data storage needs over email or in a virtual consultation. You can reach the User Support Team through the [online support request form](https://colorado.service-now.com/req_portal?id=ucb_sc_rc_form).
 
 ---
 
 ## PetaLibrary Roles
 
-In short, any researcher 
+**Owner**
+
+Every PetaLibrary allocation must have one owner. The owner is permitted to make any changes to the allocation, including file permissions, allocation size, and destruction of data. The owner is responsible for furnishing payment for PetaLibrary expenses. An optional technical contact and billing contact may also be defined. These contacts are treated as delegates of the allocation owner for normal or regular operation.
+
+**Technical Contact**
+
+A PetaLibrary allocation may have one or more technical contacts. Technical contacts are largely identical to billing contacts, in that they may speak on behalf of the owner of an allocation, short of designating a new owner.
+
+**Billing Contact**
+
+PetaLibrary allocation may have one or more billing contacts. A billing contact may speak on behalf of the owner of an allocation, making any change that an owner would, except designating a new owner.
+
+
+> [!IMPORTANT]
+> In most cases, PetaLibrary allocation owners are principal investigators (PI). While student researchers may be listed as the owner of an allocation, we strongly advise against this. We recommend listing the student's advisor or the PI of the associated research project as the allocation's owner. 
 
 --- 
 
 ## ✏ Knowledge Check
 
-<!--- 
- Knowledge Check's serve as formative assessments that test a user's understanding of the covered material. 
-   Each knowledge check should include helpful tips for incorrect selections and be configured to
-   transmit a correct attempt to the training's Google Sheet.
---->
+**TODO - Create a quick questionnaire for PL Allocations**
 
 <div style="width:45%; margin: 15px 2.5%; float:left; ">
 
