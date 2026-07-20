@@ -258,6 +258,18 @@ PetaLibrary allocation may have one or more billing contacts. A billing contact 
 > [!IMPORTANT]
 > In most cases, PetaLibrary allocation owners are principal investigators (PI). While student researchers may be listed as the owner of an allocation, we strongly advise against this. We recommend listing the student's advisor or the PI of the associated research project as the allocation's owner. 
 
+---
+
+## Accessing an Allocation
+
+Add a brief overview of data transfer options
+
+[https://curc.readthedocs.io/en/latest/petalibrary/data_transfer.html#data-transfer](https://curc.readthedocs.io/en/latest/petalibrary/data_transfer.html#data-transfer)
+
+### Adding Users
+
+Discuss the process of requesting new users to be added to an allocation (i.e. group change tickets)
+
 --- 
 
 ## ✏ Knowledge Check
