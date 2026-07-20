@@ -155,9 +155,6 @@ Institutional email address:
 
 <div style="clear:both"></div>
 
-> [!NOTE] 
-> Multiple questions are embedded in this training. It is ok if you don't know the answer to every question! Many of the questions are designed to test for common misconceptions and help you avoid common pitfalls for new users. 
-
 > [!IMPORTANT] 
 > We aim to make our online resources accessible to everyone. If you encounter any barriers in the materials contained in this tutorial, please report them through our [support request form](https://colorado.service-now.com/req_portal?id=ucb_sc_rc_form).
 
@@ -202,26 +199,9 @@ TODO - Convert into an infographic / diagram.
 
 ---
 
-## PetaLibrary Tiers
+## Allocation Tiers 
 
-**Active Tier** 
-
-PetaLibrary active allocations are the most performant PetaLibrary tier (please note that performant is a relative term – our parallel scratch filesystem will outperform any PetaLibrary tier). The underlying hardware is configured to be suitable for direct compute access, and as such is accessible from all compute environments (Alpine, Blanca, Open OnDemand). 
-
-
-**Archive Tier**
-
-PetaLibrary archive allocations are configured to maximize data integrity over performance. As such, archive allocations are not accessible from compute nodes, but can be accessed interactively on login nodes.
-
-**Active + Archive Tier**
-
-The PetaLibrary active+archive is a means of automatically replicating your data across our active and archive PetaLibrary tiers. Rather than purchase an active and archive allocation and synchronizing data between the two, you can purchase the active+archive tier, and we will manage the replication for you. With this type of allocation, you have full access to the active tier only, and we manage replicating data to the archive tier for you.
-
-**Archive + DR**
-
-Although the Archive allocation tier is robust, all current allocations within this tier are hosted in a single location. In the event of a disaster at this location, we cannot guarantee the safety of this data. To add an extra layer of protection, we offer the Archive + DR (Disaster Recovery) tier. The Archive + DR tier offers the same benefits as the Archive tier in addition to a monthly backup of the data to an offsite location. The backup process and any needed restoration efforts will be managed entirely by CURC staff.
-
-**IDEA - Add a graphic hear highlighting the differences between Active, Archive, Active + Archive**
+**TODO - Add a graphic here highlighting the differences between Active, Archive, Active + Archive, Acrhive+DR. Not necessarily as in-depth as the one provided in CURC's documentation. More of an infographic that provides a very high level overview. Maybe something like "Tier -> Common Use Case"**
 
 <div style="display: flex; align-items:center; padding:1em; border-top: dashed 1px; border-bottom: dashed 1px; " >
 
@@ -231,12 +211,28 @@ Although the Archive allocation tier is robust, all current allocations within t
 
 </div>
 
+### Active Tier 
+
+PetaLibrary active allocations are the most performant PetaLibrary tier (please note that performant is a relative term – our parallel scratch filesystem will outperform any PetaLibrary tier). The underlying hardware is configured to be suitable for direct compute access, and as such is accessible from all compute environments (Alpine, Blanca, Open OnDemand). 
+
+### Archive Tier
+
+PetaLibrary archive allocations are configured to maximize data integrity over performance. As such, archive allocations are not accessible from compute nodes, but can be accessed interactively on login nodes.
+
+### Active + Archive Tier
+
+The PetaLibrary active+archive is a means of automatically replicating your data across our active and archive PetaLibrary tiers. Rather than purchase an active and archive allocation and synchronizing data between the two, you can purchase the active+archive tier, and we will manage the replication for you. With this type of allocation, you have full access to the active tier only, and we manage replicating data to the archive tier for you.
+
+### Archive + DR
+
+Although the Archive allocation tier is robust, all current allocations within this tier are hosted in a single location. In the event of a disaster at this location, we cannot guarantee the safety of this data. To add an extra layer of protection, we offer the Archive + DR (Disaster Recovery) tier. The Archive + DR tier offers the same benefits as the Archive tier in addition to a monthly backup of the data to an offsite location. The backup process and any needed restoration efforts will be managed entirely by CURC staff.
+
 
 ---
 
-## Data Recovery
+### Data Recovery
 
-A PetaLibrary active or archive allocation is a single copy of your data that is not backed up. PetaLibrary can be a component of a good backup strategy, but for data that cannot be replaced, an active or archive PetaLibrary should not be the only copy. While the PetaLibrary active+archive and archive+DR (DR=disaster recovery) tiers provide additional redundancy for your data, please remember (as stated in the [PetaLibrary Terms of Service](https://www.colorado.edu/rc/resources/petalibrary/tos)) it is the sole responsiblity of the allocation onwer to ensure critical data are backed up. 
+A PetaLibrary active or archive allocation is a single copy of your data that is not backed up. PetaLibrary can be a component of a good backup strategy, but for data that cannot be replaced, an active or archive PetaLibrary should not be the only copy. While the PetaLibrary active+archive and archive+DR (DR=disaster recovery) tiers provide additional redundancy for your data, please remember it is the sole responsiblity of the allocation onwer to ensure critical data are backed up ([PetaLibrary Terms of Service](https://www.colorado.edu/rc/resources/petalibrary/tos)). 
 
 
 > [!TIP]
@@ -270,7 +266,7 @@ PetaLibrary allocation may have one or more billing contacts. A billing contact 
 
 <div style="width:45%; margin: 15px 2.5%; float:left; ">
 
-![A cartoon graphic representing an HPC Cluster's hardware](img/HPC_Clusters.png)<!-- style="border:solid black 1px; border-radius: 15px;" -->
+![Two researchers collaborate in a detailed cartoon data center featuring a central "PETALIBRARY" server. The high-capacity storage hub is smiling, with its side panel clearly showing "PETABYTES 100+ PB" amid other scientific data icons.](img/PetaLibrary_Banner.png)<!-- style="border:solid black 1px; border-radius: 15px;" -->
 
 </div>
 
