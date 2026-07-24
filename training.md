@@ -260,8 +260,8 @@ data-solution-button="off"
 data-text-failed="Not Quite." 
 data-text-solved="Correct! "-->
 [(X)] The allocation's owner
-[[ ]] Research Computing
-[[ ]] No one, data backups are automatically handled by the system. 
+[( )] Research Computing
+[( )] No one, data backups are automatically handled by the system. 
 <script>
 //Expected format for @input is an index - 0 (first entry), 1 (second entry), so on..
 let response = ""
