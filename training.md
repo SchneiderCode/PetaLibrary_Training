@@ -253,7 +253,8 @@ A PetaLibrary active or archive allocation is a single copy of your data that is
 <div style="width:40%; border: solid black 1px; padding:10px; border-radius: 15px; float:left; margin: 15px 2.5%;" >
 
 
-Who is responsible for ensuring data stored in a PetaLibrary Allocation is backed-up?
+Who is responsible for ensuring data stored in a PetaLibrary Allocation is backed-up?  
+
 <!-- 
 data-solution-button="off" 
 data-text-failed="Not Quite." 
