@@ -240,6 +240,67 @@ A PetaLibrary active or archive allocation is a single copy of your data that is
 
 ---
 
+--- 
+
+### ✏ Knowledge Check
+
+<div style="width:45%; margin: 15px 2.5%; float:left; ">
+
+![Two researchers collaborate in a detailed cartoon data center featuring a central "PETALIBRARY" server. The high-capacity storage hub is smiling, with its side panel clearly showing "PETABYTES 100+ PB" amid other scientific data icons.](img/PetaLibrary_Banner.png)<!-- style="border:solid black 1px; border-radius: 15px;" -->
+
+</div>
+
+<div style="width:40%; border: solid black 1px; padding:10px; border-radius: 15px; float:left; margin: 15px 2.5%;" >
+
+
+Who is responsible for ensuring data stored in a PetaLibrary Allocation is backed-up?
+<!-- 
+data-solution-button="off" 
+data-text-failed="Not Quite." 
+data-text-solved="Correct! "-->
+[(X)] The allocation's owner
+[[ ]] Research Computing
+[[ ]] No one, data backups are automatically handled by the system. 
+<script>
+//Expected format for @input is an index - 0 (first entry), 1 (second entry), so on..
+let response = ""
+
+//  Owner - Correct Answer
+if (@input == "0") {
+  response = "<b>Allocation Owner - Correct!</b> <br> Explanation <br> <br>"
+} 
+
+//RC 
+if (@input  == "1") {
+  response = "<b> Research Computing... - Not Quite.</b>  <br> Explanation <br> <br>"
+} 
+
+// No One
+if (@input == "2") {
+  response = "<b> No one... - Not Quite.</b> <br> Explanation <br> <br>"
+} 
+
+document.getElementById("hpc_question_responses").innerHTML = response
+
+if(@input == "0"){
+  let currentDate = new Date();
+  sendData({username: user_name, email: user_email, course:"PETALIBRARY_SCORES", question:"BACKUP_RESPONSIBILITY", value: currentDate.toLocaleString()})
+  send.lia("true")
+} else { send.lia("")}
+
+//Note - the wait line is required for lia to properly use the send option to the quiz
+
+"LIA: wait"
+</script>
+
+<div id="hpc_question_responses"></div>
+
+</div>
+
+<div style="clear:both"></div>
+
+---
+
 ## PetaLibrary Roles
 
 **Owner**
@@ -260,6 +321,78 @@ PetaLibrary allocation may have one or more billing contacts. A billing contact 
 
 ---
 
+### ✏ Knowledge Check
+
+<div style="width:45%; margin: 15px 2.5%; float:left; ">
+
+![Two researchers collaborate in a detailed cartoon data center featuring a central "PETALIBRARY" server. The high-capacity storage hub is smiling, with its side panel clearly showing "PETABYTES 100+ PB" amid other scientific data icons.](img/PetaLibrary_Banner.png)<!-- style="border:solid black 1px; border-radius: 15px;" -->
+
+</div>
+
+<div style="width:40%; border: solid black 1px; padding:10px; border-radius: 15px; float:left; margin: 15px 2.5%;" >
+
+Which PetaLibrary Role has authorization to handle all of the following tasks: 
+* Add new collaborators and share access to an allocation's files
+* Request changes to an allocation's files and directories (e.g. updating file permissions)
+<!-- 
+data-solution-button="off" 
+data-text-failed="Not Quite. Make sure to select ALL of the suitable PetaLibrary Roles." 
+data-text-solved="Correct!"-->
+[[X]] Technical Contact
+[[X]] Owner
+[[X]] Billing Contact 
+[[ ]] Primary Investigator or Research Advisor
+<script>
+//Expected format for @input is a numeric array
+// [0,0,0,1] 
+let response = ""
+let check = 0
+
+//  Neutral Net
+if (@input[0] == "1") {
+  response += "<b>Technical Contact - Correct!</b> <br> Technical contacts are authorized to request most changes on behalf of the PetaLibrary owner. <br> <br>"
+  check+=1
+} 
+
+//Spreadsheet 
+if (@input[1]  == "1") {
+  response += "<b> Owner - Correct! </b>  <br> The Owner is authorized to request changes to an allocation. They are also the only one authorized to retire an allocation or selecting a new owner. <br> <br>"
+  check+=1
+} 
+
+// CFD Simulation
+if (@input[2] == "1") {
+  response += "<b> Billing Contact - Correct!</b> <br> Billing contacts are authorized to request most changes on behalf of the PetaLibrary owner. <br> <br>"
+  check+=1
+} 
+
+// Hosting a website
+if (@input[3] == "1") {
+  response += "<b> PI or Advisor - Not Quite.</b> <br> A PI or advisor for a student researcher are not necessarily authorized to make PetaLibrary changes. They may only requests changes if they are one of the approved PetaLibrary Roles (Technical Contact, Billing Contact, or Owner). This is why we recommend listing the PI or advisor as the owner of an allocation. <br> <br>"
+  check-=1
+} 
+
+document.getElementById("hpc_question_responses").innerHTML = response
+
+if(check == 3){
+  let currentDate = new Date();
+  sendData({username: user_name, email: user_email, course:"NEW_USER_SCORES", question:"HPC_CLUSTERS", value: currentDate.toLocaleString()})
+  send.lia("true")
+} else { send.lia("")}
+
+//Note - the wait line is required for lia to properly use the send option to the quiz
+
+"LIA: wait"
+</script>
+
+<div id="hpc_question_responses"></div>
+
+</div>
+
+<div style="clear:both"></div>
+
+---
+
 ## Accessing an Allocation
 
 Add a brief overview of data transfer options
@@ -274,8 +407,6 @@ Discuss the process of requesting new users to be added to an allocation (i.e. g
 
 ## ✏ Knowledge Check
 
-**TODO - Create a quick questionnaire for PL Allocations**
-
 <div style="width:45%; margin: 15px 2.5%; float:left; ">
 
 ![Two researchers collaborate in a detailed cartoon data center featuring a central "PETALIBRARY" server. The high-capacity storage hub is smiling, with its side panel clearly showing "PETABYTES 100+ PB" amid other scientific data icons.](img/PetaLibrary_Banner.png)<!-- style="border:solid black 1px; border-radius: 15px;" -->
@@ -283,6 +414,17 @@ Discuss the process of requesting new users to be added to an allocation (i.e. g
 </div>
 
 <div style="width:40%; border: solid black 1px; padding:10px; border-radius: 15px; float:left; margin: 15px 2.5%;" >
+
+
+2: Who is responsible for ensuring data stored in a PetaLibrary Allocation is backed-up?
+- Owner
+- Research Computing
+- OIT / University of Colorado Boulder
+- No one, data backups are automatically handled by the system. 
+* For wrong answers, refer to PL Terms of Service and note that archive+dr is still meant to be one part of a data management plan!
+
+Common situations - How do I add someone to my allocation? 
+
 
 Which of the following research tasks are suitable for an HPC cluster, like Alpine or Blanca? (Select all that apply)
 
