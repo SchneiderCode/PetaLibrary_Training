@@ -222,7 +222,7 @@ PetaLibrary archive allocations are configured to maximize data integrity over p
 *************
 Active + Archive Tier
 
-The PetaLibrary active+archive is a means of automatically replicating your data across our active and archive PetaLibrary tiers. Rather than purchase an active and archive allocation and synchronizing data between the two, you can purchase the active+archive tier, and we will manage the replication for you. With this type of allocation, you have full access to the active tier only, and we manage replicating data to the archive tier for you.
+The PetaLibrary active+archive is a means of automatically replicating your data across our active and archive PetaLibrary tiers. With this type of allocation, you have full access to the active tier only, and we manage replicating data to the archive tier for you.
 *************
 
         {{4}}
@@ -241,6 +241,7 @@ Although the Archive allocation tier is robust, all current allocations within t
   <p style="margin-bottom:0;" > You can find an in-depth comparision of the different tiers in the [PetaLibrary Allocation Tiers Documentation](https://curc.readthedocs.io/en/latest/petalibrary/index.html) </p>
 
 </div>
+
 *************
 
 ---
@@ -267,7 +268,7 @@ PetaLibrary allocation may have one or more billing contacts. A billing contact 
 
 
 > [!IMPORTANT]
-> In most cases, PetaLibrary allocation owners are principal investigators (PI). While student researchers may be listed as the owner of an allocation, we strongly advise against this. We recommend listing the student's advisor or the PI of the associated research project as the allocation's owner. 
+> In most cases, PetaLibrary allocation owners are principal investigators (PI). While student researchers may be listed as the owner of an allocation, we strongly advise against this. If a student owner graduates, future changes to the allocation can become complicated. 
 
 ---
 
