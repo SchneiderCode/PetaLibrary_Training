@@ -376,6 +376,7 @@ Discuss the process of requesting new users to be added to an allocation (i.e. g
 <div style="width:40%; border: solid black 1px; padding:10px; border-radius: 15px; float:left; margin: 15px 2.5%;" >
 
 Which PetaLibrary Role has authorization to approve access to an allocation's files and directories?  
+
 <!-- 
 data-solution-button="off" 
 data-text-failed="Not Quite. Make sure to select ALL of the suitable PetaLibrary Roles." 
