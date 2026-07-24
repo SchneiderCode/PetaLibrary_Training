@@ -201,8 +201,31 @@ TODO - Convert into an infographic / diagram.
 
 ## Allocation Tiers 
 
+{{0}}
+
 **TODO - Add a graphic here highlighting the differences between Active, Archive, Active + Archive, Acrhive+DR. Not necessarily as in-depth as the one provided in CURC's documentation. More of an infographic that provides a very high level overview. Maybe something like "Tier -> Common Use Case"**
 
+{{1}}
+Active Tier 
+
+PetaLibrary active allocations are the most performant PetaLibrary tier (please note that performant is a relative term – our parallel scratch filesystem will outperform any PetaLibrary tier). The underlying hardware is configured to be suitable for direct compute access, and as such is accessible from all compute environments (Alpine, Blanca, Open OnDemand). 
+
+{{2}}
+Archive Tier
+
+PetaLibrary archive allocations are configured to maximize data integrity over performance. As such, archive allocations are not accessible from compute nodes, but can be accessed interactively on login nodes.
+
+{{3}}
+Active + Archive Tier
+
+The PetaLibrary active+archive is a means of automatically replicating your data across our active and archive PetaLibrary tiers. Rather than purchase an active and archive allocation and synchronizing data between the two, you can purchase the active+archive tier, and we will manage the replication for you. With this type of allocation, you have full access to the active tier only, and we manage replicating data to the archive tier for you.
+
+{{4}}
+Archive + DR
+
+Although the Archive allocation tier is robust, all current allocations within this tier are hosted in a single location. In the event of a disaster at this location, we cannot guarantee the safety of this data. To add an extra layer of protection, we offer the Archive + DR (Disaster Recovery) tier. The Archive + DR tier offers the same benefits as the Archive tier in addition to a monthly backup of the data to an offsite location. The backup process and any needed restoration efforts will be managed entirely by CURC staff.
+
+{{5}}
 <div style="display: flex; align-items:center; padding:1em; border-top: dashed 1px; border-bottom: dashed 1px; " >
 
   <img alt="Read the Docs Logo" src="img/RTD_Logo_Dark.svg" style="width:150px; margin-right:15px; background-color:white; border-radius:5px; padding:5px;"> 
@@ -210,22 +233,11 @@ TODO - Convert into an infographic / diagram.
   <p style="margin-bottom:0;" > You can find an in-depth comparision of the different tiers in the [PetaLibrary Allocation Tiers Documentation](https://curc.readthedocs.io/en/latest/petalibrary/index.html) </p>
 
 </div>
+---
 
-### Active Tier 
+### ✏ Knowledge Check
 
-PetaLibrary active allocations are the most performant PetaLibrary tier (please note that performant is a relative term – our parallel scratch filesystem will outperform any PetaLibrary tier). The underlying hardware is configured to be suitable for direct compute access, and as such is accessible from all compute environments (Alpine, Blanca, Open OnDemand). 
-
-### Archive Tier
-
-PetaLibrary archive allocations are configured to maximize data integrity over performance. As such, archive allocations are not accessible from compute nodes, but can be accessed interactively on login nodes.
-
-### Active + Archive Tier
-
-The PetaLibrary active+archive is a means of automatically replicating your data across our active and archive PetaLibrary tiers. Rather than purchase an active and archive allocation and synchronizing data between the two, you can purchase the active+archive tier, and we will manage the replication for you. With this type of allocation, you have full access to the active tier only, and we manage replicating data to the archive tier for you.
-
-### Archive + DR
-
-Although the Archive allocation tier is robust, all current allocations within this tier are hosted in a single location. In the event of a disaster at this location, we cannot guarantee the safety of this data. To add an extra layer of protection, we offer the Archive + DR (Disaster Recovery) tier. The Archive + DR tier offers the same benefits as the Archive tier in addition to a monthly backup of the data to an offsite location. The backup process and any needed restoration efforts will be managed entirely by CURC staff.
+Question Here
 
 ---
 
@@ -343,11 +355,12 @@ Add a brief overview of data transfer options
 
 [https://curc.readthedocs.io/en/latest/petalibrary/data_transfer.html#data-transfer](https://curc.readthedocs.io/en/latest/petalibrary/data_transfer.html#data-transfer)
 
----
-
+<section>
 ### Adding Collaborators
 
 Discuss the process of requesting new users to be added to an allocation (i.e. group change tickets)
+
+</section>
 
 --- 
 
