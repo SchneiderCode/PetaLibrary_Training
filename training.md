@@ -227,6 +227,31 @@ The PetaLibrary active+archive is a means of automatically replicating your data
 
 Although the Archive allocation tier is robust, all current allocations within this tier are hosted in a single location. In the event of a disaster at this location, we cannot guarantee the safety of this data. To add an extra layer of protection, we offer the Archive + DR (Disaster Recovery) tier. The Archive + DR tier offers the same benefits as the Archive tier in addition to a monthly backup of the data to an offsite location. The backup process and any needed restoration efforts will be managed entirely by CURC staff.
 
+---
+
+## PetaLibrary Roles
+
+**Owner**
+
+Every PetaLibrary allocation must have one owner. The owner is permitted to make any changes to the allocation, including file permissions, allocation size, and destruction of data. The owner is responsible for furnishing payment for PetaLibrary expenses. An optional technical contact and billing contact may also be defined. These contacts are treated as delegates of the allocation owner for normal or regular operation.
+
+**Technical Contact**
+
+A PetaLibrary allocation may have one or more technical contacts. Technical contacts are largely identical to billing contacts, in that they may speak on behalf of the owner of an allocation, short of designating a new owner.
+
+**Billing Contact**
+
+PetaLibrary allocation may have one or more billing contacts. A billing contact may speak on behalf of the owner of an allocation, making any change that an owner would, except designating a new owner.
+
+
+> [!IMPORTANT]
+> In most cases, PetaLibrary allocation owners are principal investigators (PI). While student researchers may be listed as the owner of an allocation, we strongly advise against this. We recommend listing the student's advisor or the PI of the associated research project as the allocation's owner. 
+
+---
+
+### ✏ Knowledge Check
+
+Question Here
 
 ---
 
@@ -239,8 +264,6 @@ A PetaLibrary active or archive allocation is a single copy of your data that is
 > If you have any questions or concerns about data recovery related to PetaLibrary, please reach out to CURC's User Support team through the [online support request form](https://colorado.service-now.com/req_portal?id=ucb_sc_rc_form).
 
 ---
-
---- 
 
 ### ✏ Knowledge Check
 
@@ -300,27 +323,33 @@ if("@input" === "0"){
 
 <div style="clear:both"></div>
 
----
 
-## PetaLibrary Roles
+//Note - the wait line is required for lia to properly use the send option to the quiz
 
-**Owner**
+"LIA: wait"
+</script>
 
-Every PetaLibrary allocation must have one owner. The owner is permitted to make any changes to the allocation, including file permissions, allocation size, and destruction of data. The owner is responsible for furnishing payment for PetaLibrary expenses. An optional technical contact and billing contact may also be defined. These contacts are treated as delegates of the allocation owner for normal or regular operation.
+<div id="pl_owner_question_responses"></div>
 
-**Technical Contact**
+</div>
 
-A PetaLibrary allocation may have one or more technical contacts. Technical contacts are largely identical to billing contacts, in that they may speak on behalf of the owner of an allocation, short of designating a new owner.
-
-**Billing Contact**
-
-PetaLibrary allocation may have one or more billing contacts. A billing contact may speak on behalf of the owner of an allocation, making any change that an owner would, except designating a new owner.
-
-
-> [!IMPORTANT]
-> In most cases, PetaLibrary allocation owners are principal investigators (PI). While student researchers may be listed as the owner of an allocation, we strongly advise against this. We recommend listing the student's advisor or the PI of the associated research project as the allocation's owner. 
+<div style="clear:both"></div>
 
 ---
+
+## Accessing an Allocation
+
+Add a brief overview of data transfer options
+
+[https://curc.readthedocs.io/en/latest/petalibrary/data_transfer.html#data-transfer](https://curc.readthedocs.io/en/latest/petalibrary/data_transfer.html#data-transfer)
+
+---
+
+### Adding Collaborators
+
+Discuss the process of requesting new users to be added to an allocation (i.e. group change tickets)
+
+--- 
 
 ### ✏ Knowledge Check
 
@@ -332,9 +361,7 @@ PetaLibrary allocation may have one or more billing contacts. A billing contact 
 
 <div style="width:40%; border: solid black 1px; padding:10px; border-radius: 15px; float:left; margin: 15px 2.5%;" >
 
-Which PetaLibrary Role has authorization to handle all of the following tasks: 
-* Add new collaborators and share access to an allocation's files
-* Request changes to an allocation's files and directories (e.g. updating file permissions)
+Which PetaLibrary Role has authorization to approve access to an allocation's files and directories?
 <!-- 
 data-solution-button="off" 
 data-text-failed="Not Quite. Make sure to select ALL of the suitable PetaLibrary Roles." 
@@ -373,11 +400,11 @@ if (@input[3] == "1") {
   check-=1
 } 
 
-document.getElementById("pl_owner_question_responses").innerHTML = response
+document.getElementById("pl_add_collaborators_question_responses").innerHTML = response
 
 if(check == 3){
   let currentDate = new Date();
-  sendData({username: user_name, email: user_email, course:"PETALIBRARY_SCORES", question:"PL_ROLES", value: currentDate.toLocaleString()})
+  sendData({username: user_name, email: user_email, course:"PETALIBRARY_SCORES", question:"PL_ADD_COLLABORATORS", value: currentDate.toLocaleString()})
   send.lia("true")
 } else { send.lia("")}
 
@@ -386,101 +413,7 @@ if(check == 3){
 "LIA: wait"
 </script>
 
-<div id="pl_owner_question_responses"></div>
-
-</div>
-
-<div style="clear:both"></div>
-
----
-
-## Accessing an Allocation
-
-Add a brief overview of data transfer options
-
-[https://curc.readthedocs.io/en/latest/petalibrary/data_transfer.html#data-transfer](https://curc.readthedocs.io/en/latest/petalibrary/data_transfer.html#data-transfer)
-
-### Adding Users
-
-Discuss the process of requesting new users to be added to an allocation (i.e. group change tickets)
-
---- 
-
-## ✏ Knowledge Check
-
-<div style="width:45%; margin: 15px 2.5%; float:left; ">
-
-![Two researchers collaborate in a detailed cartoon data center featuring a central "PETALIBRARY" server. The high-capacity storage hub is smiling, with its side panel clearly showing "PETABYTES 100+ PB" amid other scientific data icons.](img/PetaLibrary_Banner.png)<!-- style="border:solid black 1px; border-radius: 15px;" -->
-
-</div>
-
-<div style="width:40%; border: solid black 1px; padding:10px; border-radius: 15px; float:left; margin: 15px 2.5%;" >
-
-
-2: Who is responsible for ensuring data stored in a PetaLibrary Allocation is backed-up?
-- Owner
-- Research Computing
-- OIT / University of Colorado Boulder
-- No one, data backups are automatically handled by the system. 
-* For wrong answers, refer to PL Terms of Service and note that archive+dr is still meant to be one part of a data management plan!
-
-Common situations - How do I add someone to my allocation? 
-
-
-Which of the following research tasks are suitable for an HPC cluster, like Alpine or Blanca? (Select all that apply)
-
-<!-- 
-data-solution-button="off" 
-data-text-failed="Not Quite. Make sure to select ALL of the suitable research tasks." 
-data-text-solved="Correct! Both of the suitable research tasks have been selected!"-->
-[[X]] Training a deep learning neural network model using a large dataset (Gigabytes to Terabytes) 
-[[ ]] Creating a spreadsheet to calculate the average weight and height of 30 penguins 
-[[X]] Running a computational fluid dynamics (CFD) simulation of airflow over an airplane's wing 
-[[ ]] Hosting an interactive website for visualizing historical weather data 
-<script>
-//Expected format for @input is a numeric array
-// [0,0,0,1] 
-let response = ""
-let check = 0
-
-//  Neutral Net
-if (@input[0] == "1") {
-  response += "<b>Training a deep learning... - Correct!</b> <br> Training a deep learning neural network requires a massive amount of simultaneous computations and a lots of memory capacity to handle the model and dataset, making it a classic HPC workflow. <br> <br>"
-  check+=1
-} 
-
-//Spreadsheet 
-if (@input[1]  == "1") {
-  response += "<b> Creating a spreadsheet... - Not Quite.</b>  <br> This task is a simple, sequential calculation that requires minimal resources and is easily handled by a standard personal computer. It does not benefit from or require the parallel power of a cluster. <br> <br>"
-  check-=1
-} 
-
-// CFD Simulation
-if (@input[2] == "1") {
-  response += "<b> Running a computational fluid ... - Correct!</b> <br> Simulations often require coordinated, parallel computation across many CPU cores (and GPUs) in order to complete within a reasonable timeframe. <br> <br>"
-  check+=1
-} 
-
-// Hosting a website
-if (@input[3] == "1") {
-  response += "<b> Hosting an interactive website... - Not Quite.</b> <br> While visualizing large datasets can be a great HPC workflow, CURC does not support web servers. Research workflows that require always-on services (like web servers) need to be setup in the cloud or on a non-CURC cluster.  <br> <br>"
-  check-=1
-} 
-
-document.getElementById("hpc_question_responses").innerHTML = response
-
-if(check == 2){
-  let currentDate = new Date();
-  sendData({username: user_name, email: user_email, course:"NEW_USER_SCORES", question:"HPC_CLUSTERS", value: currentDate.toLocaleString()})
-  send.lia("true")
-} else { send.lia("")}
-
-//Note - the wait line is required for lia to properly use the send option to the quiz
-
-"LIA: wait"
-</script>
-
-<div id="hpc_question_responses"></div>
+<div id="pl_add_collaborators_question_responses"></div>
 
 </div>
 
