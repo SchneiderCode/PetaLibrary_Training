@@ -266,23 +266,23 @@ data-text-solved="Correct! "-->
 let response = ""
 
 //  Owner - Correct Answer
-if (@input == "0") {
+if ("@input" === "0") {
   response = "<b>Allocation Owner - Correct!</b> <br> Explanation <br> <br>"
 } 
 
 //RC 
-if (@input  == "1") {
+if ("@input" === "1") {
   response = "<b> Research Computing... - Not Quite.</b>  <br> Explanation <br> <br>"
 } 
 
 // No One
-if (@input == "2") {
+if ("@input" === "2") {
   response = "<b> No one... - Not Quite.</b> <br> Explanation <br> <br>"
 } 
 
-document.getElementById("hpc_question_responses").innerHTML = response
+document.getElementById("data_backup_question_responses").innerHTML = response
 
-if(@input == "0"){
+if("@input" === "0"){
   let currentDate = new Date();
   sendData({username: user_name, email: user_email, course:"PETALIBRARY_SCORES", question:"BACKUP_RESPONSIBILITY", value: currentDate.toLocaleString()})
   send.lia("true")
@@ -293,7 +293,7 @@ if(@input == "0"){
 "LIA: wait"
 </script>
 
-<div id="hpc_question_responses"></div>
+<div id="data_backup_question_responses"></div>
 
 </div>
 
@@ -372,11 +372,11 @@ if (@input[3] == "1") {
   check-=1
 } 
 
-document.getElementById("hpc_question_responses").innerHTML = response
+document.getElementById("pl_owner_question_responses").innerHTML = response
 
 if(check == 3){
   let currentDate = new Date();
-  sendData({username: user_name, email: user_email, course:"NEW_USER_SCORES", question:"HPC_CLUSTERS", value: currentDate.toLocaleString()})
+  sendData({username: user_name, email: user_email, course:"PETALIBRARY_SCORES", question:"PL_ROLES", value: currentDate.toLocaleString()})
   send.lia("true")
 } else { send.lia("")}
 
@@ -385,7 +385,7 @@ if(check == 3){
 "LIA: wait"
 </script>
 
-<div id="hpc_question_responses"></div>
+<div id="pl_owner_question_responses"></div>
 
 </div>
 
