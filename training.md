@@ -56,6 +56,8 @@ icon: img/rc_logo.png
 
 version: 0.0.1
 
+import: https://raw.githubusercontent.com/LiaTemplates/mermaid_template/0.1.4/README.md
+
 -->
 
 # Research Computing PetaLibrary Training
@@ -188,6 +190,16 @@ The PetaLibrary is a University of Colorado Boulder Research Computing service t
 ---
 
 ## Creating an Allocation
+
+```mermaid @mermaid
+flowchart LR
+    A[Step 1: Choose Tier] --> B[Step 2: Submit Request]
+    B --> C[Step 3: Access Data]
+    
+    style A fill:#d4e6f1,stroke:#2874a6,stroke-width:2px,color:#154360
+    style B fill:#d5f5e3,stroke:#239b56,stroke-width:2px,color:#145a32
+    style C fill:#fcf3cf,stroke:#d4ac0d,stroke-width:2px,color:#7d6608
+```
 
 Step 1: Choose the allocation tier that is right for you.
 
