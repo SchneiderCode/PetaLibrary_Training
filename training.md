@@ -519,7 +519,13 @@ Depending on your workflow, there are several ways to move data in and out of yo
 * **Local Mounting (SMB/CIFS):** You can mount your PetaLibrary allocation directly to your local Mac, Windows, or Linux workstation while connected to the campus VPN. 
 * **Rclone / SFTP:** Ideal for backing up local data directly to your allocation via the command line.
 
-TODO - Add a link to the RTD Docs on file transfers
+<div style="display: flex; align-items:center; padding:1em; border-top: dashed 1px; border-bottom: dashed 1px; " >
+
+  <img alt="Read the Docs Logo" src="img/RTD_Logo_Dark.svg" style="width:150px; margin-right:15px; background-color:white; border-radius:5px; padding:5px;"> 
+
+  <p style="margin-bottom:0;" > You can find additional information on these and other data transfer tools in the [PetaLibrary Data Transfers Documentation](https://curc.readthedocs.io/en/latest/petalibrary/data_transfer.html) </p>
+
+</div>
 
 --- 
 
